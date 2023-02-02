@@ -18,7 +18,7 @@ The workflow to getting started on RITs is as follows:
 ```java
 	
 	public class TestRemitaDDMandateSDKServices
-      {
+	{
         static void Main(string[] args)
         {
             Console.WriteLine("#########################################################");
