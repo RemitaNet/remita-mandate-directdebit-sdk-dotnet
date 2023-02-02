@@ -16,7 +16,7 @@ The workflow to getting started on RITs is as follows:
 
 **Sample Demo Code:**
 ```java
-	    public class TestRemitaDDMandateSDKServices
+	public class TestRemitaDDMandateSDKServices
     {
         static void Main(string[] args)
         {
@@ -36,8 +36,6 @@ The workflow to getting started on RITs is as follows:
             remitaDDMandateAPI.apiToken = "SGlQekNzMEdMbjhlRUZsUzJCWk5saDB6SU14Zk15djR4WmkxaUpDTll6bGIxRCs4UkVvaGhnPT0=";
             remitaDDMandateAPI.amount = "1000";
 
-            Console.WriteLine("++++ ENVIRONMENT BASE URL: " + remitaDDMandateAPI.baseUrl);
-  
             Console.WriteLine(" ");
             Console.WriteLine("#############################");
             Console.WriteLine("###### Validate OTP ######");

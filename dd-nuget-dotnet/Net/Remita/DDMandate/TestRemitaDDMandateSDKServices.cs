@@ -26,9 +26,7 @@ namespace RemitaDDMandateSDK.Net.Remita.DDMandate
             remitaDDMandateAPI.apiKey = "Q1dHREVNTzEyMzR8Q1dHREVNTw==";
             remitaDDMandateAPI.apiToken = "SGlQekNzMEdMbjhlRUZsUzJCWk5saDB6SU14Zk15djR4WmkxaUpDTll6bGIxRCs4UkVvaGhnPT0=";
             remitaDDMandateAPI.amount = "1000";
-
-            Console.WriteLine("++++ ENVIRONMENT BASE URL: " + remitaDDMandateAPI.baseUrl);
-  
+              
             Console.WriteLine(" ");
             Console.WriteLine("#############################");
             Console.WriteLine("###### Validate OTP ######");
