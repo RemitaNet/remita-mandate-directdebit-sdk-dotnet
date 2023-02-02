@@ -48,12 +48,12 @@
   <ItemGroup>
     <Compile Include="Net\Remita\DDMandate\Config\EnvironmentConfig.cs" />
     <Compile Include="Net\Remita\DDMandate\Config\Header.cs" />
-    <Compile Include="Net\Remita\DDMandate\Config\WebClientUtil.cs" />
-    <Compile Include="Net\Remita\DDMandate\MandateActivateValidateOTP\Data.cs" />
-    <Compile Include="Net\Remita\DDMandate\MandateActivateValidateOTP\AccountEnquiry.cs" />
-    <Compile Include="Net\Remita\DDMandate\MandateActivateValidateOTP\AccountEnquiryPayload.cs" />
-    <Compile Include="Net\Remita\DDMandate\MandateActivateValidateOTP\AccountEnquiryResponseData.cs" />
-    <Compile Include="Net\Remita\DDMandate\RemitaDDMandateServices.cs" />
+    <Compile Include="Net\Remita\DDMandate\Util\DateUtil.cs" />
+    <Compile Include="Net\Remita\DDMandate\Util\WebClientUtil.cs" />
+    <Compile Include="Net\Remita\DDMandate\ValidateOTP\AuthParams.cs" />
+    <Compile Include="Net\Remita\DDMandate\ValidateOTP\ValidateOTPPayload.cs" />
+    <Compile Include="Net\Remita\DDMandate\ValidateOTP\ValidateOTPResponseData.cs" />
+    <Compile Include="Net\Remita\DDMandate\RemitaDDMandateAPI.cs" />
     <Compile Include="Net\Remita\DDMandate\SdkResponseCode.cs" />
     <Compile Include="Net\Remita\DDMandate\TestRemitaDDMandateSDKServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

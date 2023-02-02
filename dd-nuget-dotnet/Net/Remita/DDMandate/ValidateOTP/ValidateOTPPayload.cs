@@ -8,7 +8,8 @@ namespace RemitaDDMandateSDK.Net.Remita.DDMandate.ValidateOTP
 {
     public class ValidateOTPPayload
     {
-        public string sourceAccount { get; set; }
-        public string sourceBankCode { get; set; }
+        public string remitaTransRef { get; set; }
+        public string card { get; set; }
+        public string otp { get; set; }
     }
 }

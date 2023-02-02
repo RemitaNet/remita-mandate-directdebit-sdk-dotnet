@@ -1,11 +1,11 @@
-﻿using System;
+﻿using RemitaDDMandateSDK.Net.Remita.DDMandate.Config;
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Net;
 
-namespace RemitaDDMandateSDK.Net.Remita.DDMandate.Config
+namespace RemitaDDMandateSDK.Net.Remita.DDMandate.Util
 {
-
     /// <summary>
     /// 
     /// </summary>
@@ -18,14 +18,12 @@ namespace RemitaDDMandateSDK.Net.Remita.DDMandate.Config
         /// <param name="BaseURL"></param>
         /// <param name="_Headers"></param>
         /// <returns></returns>
-        //public static string PostResponse(String BaseURL, String APIMethod, String body, List<Header> headers)
         public static string PostResponse(String BaseURL,  String body, List<Header> headers)
         {
-            Console.WriteLine("+++++++++ URL: " + $"{BaseURL}");
-
-            Console.WriteLine();
-            Console.WriteLine("++++++++++++++Body: " + body);
-            Console.WriteLine();
+           // Console.WriteLine("+++++++++ URL: " + $"{BaseURL}");
+           // Console.WriteLine();
+           // Console.WriteLine("++++++++++++++Body: " + body);
+           // Console.WriteLine();
 
             String response = string.Empty;
             try
@@ -38,7 +36,6 @@ namespace RemitaDDMandateSDK.Net.Remita.DDMandate.Config
                 client.Encoding = System.Text.Encoding.UTF8;
                 string method = "POST";
 
-                //response = client.UploadString($"{BaseURL}{APIMethod}", method, body);
                 response = client.UploadString($"{BaseURL}", method, body);
             }
             catch (Exception ex)
@@ -46,7 +43,7 @@ namespace RemitaDDMandateSDK.Net.Remita.DDMandate.Config
                 response = ex.Message;
             }
 
-            Console.WriteLine("++++ RESPONSE: " + response);
+            //Console.WriteLine("++++ RESPONSE: " + response);
 
             return response;
         }
@@ -79,6 +76,15 @@ namespace RemitaDDMandateSDK.Net.Remita.DDMandate.Config
             }
 
             return response;
+        }
+
+        public static string SHA512(string hash_string)
+        {
+            System.Security.Cryptography.SHA512Managed sha512 = new System.Security.Cryptography.SHA512Managed();
+            Byte[] EncryptedSHA512 = sha512.ComputeHash(System.Text.Encoding.UTF8.GetBytes(hash_string));
+            sha512.Clear();
+            string hashed = BitConverter.ToString(EncryptedSHA512).Replace("-", "").ToLower();
+            return hashed;
         }
 
     }

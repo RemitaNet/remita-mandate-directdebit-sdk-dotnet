@@ -1,0 +1,8 @@
+D:\IYARE\remita-mandate-directdebit-sdk-dotnet\dd-nuget-dotnet\bin\Debug\RemitaDDMandateSDK.exe
+D:\IYARE\remita-mandate-directdebit-sdk-dotnet\dd-nuget-dotnet\bin\Debug\RemitaDDMandateSDK.pdb
+D:\IYARE\remita-mandate-directdebit-sdk-dotnet\dd-nuget-dotnet\bin\Debug\Newtonsoft.Json.dll
+D:\IYARE\remita-mandate-directdebit-sdk-dotnet\dd-nuget-dotnet\bin\Debug\Newtonsoft.Json.xml
+D:\IYARE\remita-mandate-directdebit-sdk-dotnet\dd-nuget-dotnet\obj\Debug\RemitaDDMandateSDK.csproj.CoreCompileInputs.cache
+D:\IYARE\remita-mandate-directdebit-sdk-dotnet\dd-nuget-dotnet\obj\Debug\RemitaDDMandateSDK.csproj.CopyComplete
+D:\IYARE\remita-mandate-directdebit-sdk-dotnet\dd-nuget-dotnet\obj\Debug\RemitaDDMandateSDK.exe
+D:\IYARE\remita-mandate-directdebit-sdk-dotnet\dd-nuget-dotnet\obj\Debug\RemitaDDMandateSDK.pdb
